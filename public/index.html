@@ -107,6 +107,53 @@
             margin:4px 2px 2px 20px;
         }
     }
+	    			a {
+				color: #0f5cd8;
+				text-decoration: none;
+			}
+			.ad {
+				font-size: 12px;
+				color: #aaa;
+			}
+			.box {
+				margin: 15px 0px 15px 0px;
+			}
+			.bg {
+				background: #161616;
+				padding: 15px;
+			}
+			button {
+				width: 60px;
+				padding: 10px;
+				font-size: 16px;
+				float: right;
+				background: #161616;
+				color: #fff;
+				border: 1px solid #161616;
+				cursor: pointer;
+				outline: none;
+			}
+			button:hover {
+				background: #2e2e2e;
+			}
+			button:active {
+				background: #000000;
+			}
+			.c {
+				width: 720px;
+				margin: auto;
+			}
+			iframe {
+				background: #ccc;
+				border: none;
+			}
+			input {
+				width: 650px;
+				padding: 10px;
+				font-size: 16px;
+				border: 1px solid #ccc;
+				outline: none;
+			}
   </style>
 </head>
 <body>
@@ -190,6 +237,30 @@
 			checkError(); 
 		}
 	</script>
+	  <div class="box">
+			<div class="c">
+				<h1>Yani</h1>
+				<p>Yani allows you to watch YouTube videos unblocked and unrestricted. Just enter a YouTube link or ID in the box below and click the "Go" button to play it.</p>
+				<noscript><p>You must have Javascript enabled.</p></noscript>
+				
+				<input id="inp" placeholder="YouTube video URL or ID">
+				<button onclick="go();">Go</button>
+			</div>
+		</div>
+		
+		<div class="bg">
+			<div class="c">
+				<iframe id="player" height="405" width="720" src="https://www.youtube-nocookie.com/embed/EMf5OXumvmQ" allowfullscreen></iframe>
+			</div>
+		</div>
+		
+		<div class="box">
+			<div class="c">
+				<p>See also <a href="http://clean.yani.cf">CleanTube</a>.</p>
+			</div>
+		</div>
+		
+		<script src="main.js"></script>
   
   
 </body>
